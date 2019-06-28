@@ -30,7 +30,7 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
-        name: 'Andrew Mead'
+        name: 'Sean Coverdill'
     })
 })
 
@@ -74,13 +74,6 @@ app.get('/products', (req, res) => {
     })
 })
 
-app.get('/help/*', (req, res) => {
-    res.render('404', {
-        title: '404',
-        name: 'Andrew Mead',
-        errorMessage: 'Help article not found.'
-    })
-})
 
 app.get('*', (req, res) => {
     res.render('404', {
